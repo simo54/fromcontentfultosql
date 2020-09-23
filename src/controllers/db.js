@@ -1,4 +1,4 @@
-const { Pool } = require("pg");
+const { Pool } = require("pg"); // PostgreSQL required in order to create a new database
 
 const database = new Pool({
   user: process.env.DB_USER,
