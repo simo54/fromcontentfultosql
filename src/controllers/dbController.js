@@ -75,11 +75,11 @@ const manageDatabase = {
   updatePost: (req, res) => {
     console.log("Beginning of updatePost");
     const { id } = req.params;
-    const { title, username } = req.body;
+    const { image } = req.body;
     database
       .query(
         `UPDATE posts
-      SET title='${title}', username='${username}'
+      SET image='${image}'
       WHERE id=${id}
       RETURNING *`
       )

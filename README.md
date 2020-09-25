@@ -14,3 +14,11 @@ Structure of the project has been made with the following steps:
    - dcController.js where we manage our GET, ADD, PUT, DELETE and more...
    - routes folder:
      - routes.js where we define the routes and the middlewares apply to specifics paths of our web
+
+# Bonus functionalities
+
+On dbControllers.js in getAllPosts is possible to querystring and filter posts using the LIKE Sql method.
+
+Always on that file, in certainPost we can filter the posts with the id (example localhost:xxxx/posts/id).
+
+updatePost will update the post using a different image, insert more variables on req.body and on .query in order to update more fields.
